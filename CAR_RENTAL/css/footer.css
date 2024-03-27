@@ -1,0 +1,78 @@
+ /*FOOTER*/
+
+
+ .footer{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 5rem;
+    margin-top: 10rem;
+    width: 100%;
+    
+
+ }
+
+ .footer-logo{
+    max-width: 130rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+
+
+ .footer ul, footer li{
+    list-style-type: none;
+    padding: 0;
+ }
+
+ .logo__footer{
+    font-size: 1.6rem;
+ }
+
+
+ .footer-redes img{
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(108%) contrast(102%);
+    margin-bottom: -.6rem;
+    margin-left: 3rem;
+    
+}
+
+.footer-redes img:hover{
+    filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(108%) contrast(102%);
+}
+ 
+
+/* FOOTER - APARTADOS */ 
+
+ .footer-apartados{
+    display: flex;
+    justify-content: space-between;
+    
+    max-width: 130rem;
+    margin: auto;
+    padding: 2rem 0;
+ }
+
+ .footer-container{
+    width: 30rem;
+ }
+
+.footer-titulo h3{
+    font-size: 1.5rem;
+}
+
+ .footer-lista li{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+ }
+
+ .footer-lista a{
+   color: var(--blanco);
+ }
+
+ .footer-lista a:hover{
+   text-decoration: underline;
+ }

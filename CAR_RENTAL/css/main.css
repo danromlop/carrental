@@ -1,0 +1,325 @@
+/* FLOTA */
+
+
+.flota{
+    margin-top: 8rem;
+}
+
+.flota-container{
+    max-width: 150rem;
+    margin: auto;
+  
+    
+}
+
+.slider-intro{
+    height: 20rem;
+    max-width: 75rem;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.slider-intro h3{
+    font-size: 4rem;
+    margin: 2rem 0;
+    
+}
+
+.slider-intro p{
+    font-size: 2rem;
+}
+
+/* slider container */
+
+.slider-container{
+    display: flex;
+    max-width: 130rem;
+    margin: auto;
+    justify-content: space-between;
+    gap: 1rem;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .slider-container{
+         display: block;
+    }
+
+    .slider-options{
+        gap: 1rem;
+        width: 70%;
+        margin: auto;
+    }
+
+    .slider-show{
+        display: block;
+    }
+
+   
+   
+}
+
+.slider-options{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    
+}
+
+
+.slider-show{
+    display: flex;
+    overflow: hidden;
+    
+}
+
+
+
+.slider-img-container{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.slider-img-div{
+    max-width: 50rem;
+}
+
+.slider-img{
+    width: 100%;
+}
+
+
+.slider-description{
+    flex: 1;
+    text-align: center;
+    margin: auto;
+    min-height: 30rem;
+  
+}
+
+.slider-description h4{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    
+   
+   
+}
+.slider-description p{
+    font-size: 1.8rem;
+}
+
+
+/* clases js */
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .show{
+        display: flex;
+    }
+
+}
+
+/* VENTAJAS */
+
+.ventajas-section{
+  margin: 8rem 0; 
+  background-color: var(--primario);
+  padding: 4rem 0;
+}
+
+
+.ventajas-container{
+    
+    display: flex;
+    justify-content: space-between;
+    max-width: 130rem;
+    margin: auto;
+    align-items: center;
+    padding: 0 4rem;
+    
+    
+}
+
+@media (max-width: 768px) {
+    .ventajas-container{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:baseline;
+        gap: 3rem;
+        
+        
+        
+    }
+
+    
+  
+}
+
+
+
+.ventajas{
+    padding-right: 3rem;
+    color: var(--blanco);
+}
+
+.ventajas:last-of-type{
+    padding: 0;
+}
+
+
+.ventajas-titulo{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    
+  
+    
+    .ventajas-titulo{
+        display: flex;
+        gap: 1.7rem;
+        align-items: center;
+        
+       
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+
+
+
+.ventajas-icono img{
+    width: 24px;
+    height: 24px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(108%) contrast(102%);
+    margin-bottom: -.6rem;
+
+}
+
+@media (max-width: 768px) {
+    .ventajas-icono img{
+        
+        margin-bottom: .5rem;
+        
+    }
+}
+
+
+
+.ventajas-info p{
+    font-size: 2.3rem;
+    font-weight: bold;
+  
+}
+
+
+
+/* OFERTAS   */ 
+
+.ofertas-section{
+    max-width: 130rem;
+    margin: auto;
+}
+
+.ofertas-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+    .ofertas-container{
+        display: block;
+        margin: 1rem;
+    }
+
+    .oferta{
+        margin-bottom: 1rem;
+    }
+}
+
+.ofertas-titulo{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+
+
+
+.oferta{
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 1rem;
+    transition: .1s ease-in;
+    
+    
+}
+
+.oferta:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 4px black;
+}
+
+.oferta:nth-child(1) {
+    background-image: url("../img/reservaonline.jpg");
+  }
+
+.oferta:nth-child(2) {
+    background-image:  url("../img/ofertaelectrico.jpg");
+  }
+
+.oferta:nth-child(3) {
+    background-image:  url("../img/tenerife.jpg");
+  }
+
+
+
+.oferta-descuento{
+    background-color: rgb(190, 24, 24);
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
+    color: var(--blanco);
+    padding: 1rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+}
+
+.oferta-descuento span{
+    font-size: 3rem;
+    display: block;
+}
+
+.oferta-texto{
+    position: absolute;
+    bottom: 0;
+    color: var(--blanco);
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}

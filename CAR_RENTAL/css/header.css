@@ -1,0 +1,267 @@
+
+/* header */
+
+
+
+/* LOGO */
+.logo{
+    color: var(--blanco);
+    margin: 0 3rem;
+    font-size: 2.5rem;
+}
+
+.logo__nombre{
+    font-weight: 400;
+}
+
+.logo__bold{
+    font-weight: 700;
+}
+
+/* navegacion  */
+
+.header{
+    background-color: var(--primario);
+}
+
+.barra{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 150rem;
+    margin: auto;
+   
+}
+
+.mobile-menu img{
+    height: 24px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(90deg) brightness(108%) contrast(102%);
+
+}
+
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    
+    
+}
+
+.navegacion{
+   
+    gap: 3rem;
+    max-width: 80rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+   
+   
+  
+}
+
+
+
+@media (max-width: 768px){
+    .navegacion{
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: visibility .3s ease-in-out, opacity 0.5s linear, height .5s linear;
+    }
+}
+
+.nav-a a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    
+
+}
+
+.iniciar-sesion{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+    padding: 1rem;
+    
+    
+}
+
+
+@media (min-width: 1024px ) {
+    .iniciar-sesion{
+        margin-right: 20px;
+        max-width: 20rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center; 
+        gap: 1rem;
+        padding: 2rem 2rem;
+        
+        
+    }
+
+    
+}
+
+ .iniciar-sesion:hover{
+    background-color: var(--blanco);
+    color: var(--secundario);
+    cursor: pointer;
+    
+} 
+
+.iniciar-sesion:hover a{ 
+    color: var(--primario);
+
+}
+
+.iniciar-sesion:hover svg{ 
+    filter: invert(18%) sepia(64%) saturate(4392%) hue-rotate(185deg) brightness(87%) contrast(88%);
+
+}
+
+
+/* RESERVAR */
+
+
+.reserva{
+    background-image: url(../img/formulario.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 50rem;
+    
+    
+    
+    
+}
+
+.reserva-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    column-gap: 2rem;
+    max-width: 150rem;
+    margin: auto;
+    background-color: rgb(50,50,50, 0.5);
+    padding: 5rem;
+    
+    
+}
+
+@media (max-width: 1024px ) {
+    .reserva-container{
+        display: block;
+        padding-bottom: 3rem;
+
+    }
+
+    .reserva{
+        height: 100%;
+        
+    }
+
+    .reserva-formulario-container{
+        margin-top: 3rem;
+        
+    }
+}
+
+.reserva-descripcion{
+    /* background-color: rgb(50,50,50, 0.5); */
+    color: var(--blanco);
+    padding-right: 30%;
+  
+    
+    
+}
+
+.reserva-descripcion p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.reserva-descripcion h1{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+/* formulario */
+
+.reserva-formulario-container{
+    font-size: 1.5rem;
+    height: auto;
+}
+
+.reserva-formulario{
+    padding: 2rem;
+    background-color: var(--blanco);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.reserva-formulario p{
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.campo {
+  margin-bottom: 1rem ;
+  
+}
+
+.campo-hora{
+    display: block;
+    
+}
+
+.campo-hora input{
+    background-color: var(--blanco);
+    border: 1px solid var(--gris);
+    height: 2.3rem;
+    
+}
+
+
+
+@media (min-width: 1024px) {
+    .campo-hora{
+        display: flex;
+        gap: 15rem;
+        justify-content: start;
+    }
+}
+
+
+.reserva-formulario input[type="text"]
+    {
+        padding: 1rem 1rem 1rem 3rem;
+        width: 100%; 
+        background-color: var(--blanco);
+        border: 1px solid var(--gris);
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+        background-image: url("../icons/search.svg"); /* Establecer la imagen de fondo */
+        background-repeat: no-repeat; /* Asegurarse de que la imagen no se repita */
+        background-position: 5px center; /* Ajustar la posición de la imagen */
+        background-size: 2rem; /* Ajustar el tamaño de la imagen */
+        
+        
+    }
+
+ 
+
+.label-block label{
+    display:block;
+}
+
+.label-inline label{
+    display:inline-block;
+}

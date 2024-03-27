@@ -1,0 +1,126 @@
+/* utilidades */
+
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #0F52BA;
+    --secundario: #13264C;
+    --especial: #E34234;
+    --gris:#e1e1e1;
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --grisOscuro: #2d2d2d;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */ 
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--fuenteParrafos);
+    margin: 0;
+
+}
+
+.contenedor{
+    
+    width: min(90%, 120rem); /*Aplica el menor valor siempre posible*/
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    margin: 0;
+   
+
+}
+
+p{
+    margin: 0;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+
+
+/* botones */
+
+.boton{
+  
+    
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    text-align: center;
+    border: none;
+    border-radius: 1.5rem;
+
+}
+
+
+.boton-primario{
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+.boton-primario:hover{
+    background-color: var(--secundario);
+    cursor: pointer;
+}
+
+.boton-blanco{
+    background-color: var(--blanco);
+    color: var(--primario);
+}
+
+.boton-blanco:hover{
+    background-color: rgb(202, 201, 201);
+    cursor: pointer;
+}
+
+.boton-slider{
+    background-color: var(--gris);
+    color: var(--negro);
+    padding: 1rem 3rem;
+    white-space: nowrap;
+}
+
+.boton-slider:hover{
+    background-color:var(--primario);
+    cursor: pointer;
+    color: var(--blanco);
+    transition: background-color 0.3s;
+    
+}
+
+
+.boton-block{
+    display:block;
+}
+
+.boton-activo{
+    background-color:var(--primario);
+    
+    color: var(--blanco);
+}
+

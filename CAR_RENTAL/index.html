@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <div class="barra">
+            <a class="logo" href="index.html">
+                <h1 class="logo__nombre no-margin centrar-texto">Car<span class="logo__bold">Rental</span></h1>
+            </a>
+
+            <div class="mobile-menu">
+                <img src="/icons/hamburger-menu.svg">
+            </div>
+
+
+                <nav class="navegacion nav-a">
+                    <a href="index.html" class="navegacion__enlace">Coches y Furgonetas</a>
+                    <a href="index.html" class="navegacion__enlace">Ofertas</a>
+                    <a href="index.html" class="navegacion__enlace">Oficinas y servicios</a>
+                    <a href="index.html" class="navegacion__enlace">Destinos</a>
+                    <a href="index.html" class="navegacion__enlace">Empresas</a>
+                    <a href="index.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            
+
+            <nav class="iniciar-sesion-container">
+                <div class="iniciar-sesion">
+                    <a href="nosotros.html" class="navegacion__enlace">Iniciar Sesión</a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ecw-icon__svg" style="fill: rgb(255, 255, 255); transform: rotate(0deg); width: 24px; height: 24px; min-width: 24px; min-height: 24px;"><defs><path d="M19.713 16.544a10.84 10.84 0 00-4.862-3.352 4.622 4.622 0 10-5.706 0 10.84 10.84 0 00-4.858 3.352 8.956 8.956 0 1115.422 0h.004zM12 12.143a2.596 2.596 0 112.579-2.613v.017a2.589 2.589 0 01-2.579 2.6v-.004zm0 8.81a8.928 8.928 0 01-6.439-2.726c1.755-2.224 4.034-3.44 6.439-3.44 2.405 0 4.684 1.219 6.439 3.43A8.93 8.93 0 0112 20.956v-.003zM12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11c-.006-6.073-4.927-10.995-11-11z" id="login_svg__a"></path></defs><use xlink:href="#login_svg__a" fill-rule="evenodd"></use></svg>
+                </div>
+            </nav>
+        </div>
+
+
+        <div class="reserva">
+            <div class="reserva-container ">
+                <div class="reserva-descripcion">
+                    <h1>El alquiler de coches con más ventajas</h1>
+                    <p>Únete a nuestro programa de fidelización GRATUITO Rental Rewards y disfruta, entre otras ventajas, de un descuento del 10%, servicio prioritario y ofertas exclusivas de socios.</p>
+                    <button class="boton boton-blanco">Inscríbete Ya</button>
+                </div>
+                <!--formulario-->
+                <div class="reserva-formulario-container">
+                    <form class="reserva-formulario">
+
+                        <div class="campo label-block">
+                            <p for="recoger">Recoger en</p>
+                            <input type="text" placeholder="Introduce un aeropuerto, ciudad o código postal">
+                           
+                            
+                            <div class="campo label-inline">
+                               
+                                <input name="one-way" id="one-way" type="checkbox">
+                                <label for="one-way">Devolución en otra oficina</label>
+                            </div>
+                        </div>
+
+                        <div class="campo campo-hora">
+                            <div>
+                                <p for="fecha">Desde:</p>
+                                <input type="date">
+                                <input type="time">
+                            </div>
+
+                            <div>
+                                <p for="fecha">Hasta:</p>
+                                <input type="date">
+                                <input type="time">
+                            </div>
+                        </div>
+                        
+                        <p>Tipo de alquiler</p>
+
+                        <div class="campo">
+                            <input type="radio" id="ocio" name="tipo-alquier" value="ocio">
+                            <label for="ocio">Ocio</label>
+                            <input type="radio" id="business" name="tipo-alquier" value="business">
+                            <label for="business">Business</label>
+                            <input type="radio" id="Otros" name="tipo-alquier" value="Otros">
+                            <label for="Otros">Otros</label>
+                        </div>
+
+                        <div class="campo">
+                            <div>
+                                <input type="checkbox" id="conductor-mayor" name="conductor-mayor">
+                                <label for="conductor-mayor">Conductor mayor de 25 años</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="codigo-descuento" name="codigo-descuento">
+                                <label for="codigo-descuento">Tengo un código de descuento</label>
+                            </div>
+
+                        </div>
+
+                        <input class="boton boton-primario" type="submit" value="BUSCAR">
+
+                    </form>
+                </div>
+                <!--fin formulario-->
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <!--slider-->
+        <section class="flota">
+            <div class="flota-container">
+                <div class="slider-intro">
+                    <h3>Nuestra Flota</h3>
+                    <p>Tenemos muchas opciones para ti. Elige desde sedanes de lujo, deportivos y coches eléctricos cero emisiones hasta SUV, furgonetas, camiones y mucho más.</p>
+                </div>
+                <!-- inicio container-->
+                <div class="slider-container">
+                    <div class="slider-options">
+                        <button onclick="iniciarSlider(0)" class="boton boton-slider boton-block">Coches</button>
+                        <button onclick="iniciarSlider(1)" class="boton boton-slider boton-block">Vehículos eléctricos</button>
+                        <button onclick="iniciarSlider(2)" class="boton boton-slider boton-block">SUVs</button>
+                        <button onclick="iniciarSlider(3)" class="boton boton-slider boton-block">Monovolúmenes</button>
+                        <button onclick="iniciarSlider(4)" class="boton boton-slider boton-block">Coches de lujo y deportivos</button>
+                        <button onclick="iniciarSlider(5)" class="boton boton-slider boton-block">Furgonetas y camiones</button>
+                    </div>
+                    <!--inicio slide-->
+                    <div class="slider-show">
+                        <div class="slider-img-container">
+                            <div class="slider-img-div">
+                                <img class="slider-img" src="img/Fleet_Car.png" alt="flota_coche">
+                            </div>
+                        </div>
+                        <div class="slider-description">
+                            <h4>Coches</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, deleniti sunt itaque possimus quibusdam officia tenetur non odit eius incidunt soluta ipsam praesentium ut natus blanditiis laborum distinctio veritatis.</p>
+                        </div>
+                    </div>
+                    <!--fin slide-->
+                    
+                    <!--inicio slide-->
+                    <div class="slider-show hide">
+                        <div class="slider-img-container">
+                            <div class="slider-img-div">
+                                <img class="slider-img" src="img/Fleet_EV.png" alt="flota_coche">
+                            </div>
+                        </div>
+                        <div class="slider-description">
+                            <h4>Vehículos eléctricos</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, deleniti sunt itaque possimus quibusdam officia tenetur non odit eius incidunt soluta ipsam praesentium ut natus blanditiis laborum distinctio veritatis.</p>
+                        </div>
+                    </div>
+                    <!--fin slide-->
+
+                    <!--inicio slide-->
+                    <div class="slider-show hide">
+                        <div class="slider-img-container">
+                            <div class="slider-img-div">
+                                <img class="slider-img" src="img/Fleet_4x4.png" alt="flota_coche">
+                            </div>
+                        </div>
+                        <div class="slider-description">
+                            <h4>SUVs</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, deleniti sunt itaque possimus quibusdam officia tenetur non odit eius incidunt soluta ipsam praesentium ut natus blanditiis laborum distinctio veritatis.</p>
+                        </div>
+                    </div>
+                    <!--fin slide-->
+
+                    <!--inicio slide-->
+                    <div class="slider-show hide">
+                        <div class="slider-img-container">
+                            <div class="slider-img-div">
+                                <img class="slider-img" src="img/Fleet_MPV.png" alt="flota_coche">
+                            </div>
+                        </div>
+                        <div class="slider-description">
+                            <h4>Monovolúmenes</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, deleniti sunt itaque possimus quibusdam officia tenetur non odit eius incidunt soluta ipsam praesentium ut natus blanditiis laborum distinctio veritatis.</p>
+                        </div>
+                    </div>
+                    <!--fin slide-->
+
+                    <!--inicio slide-->
+                    <div class="slider-show hide">
+                        <div class="slider-img-container">
+                            <div class="slider-img-div">
+                                <img class="slider-img" src="img/Fleet_Luxury.png" alt="flota_coche">
+                            </div>
+                        </div>
+                        <div class="slider-description">
+                            <h4>Coches de lujo y deportivos</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, deleniti sunt itaque possimus quibusdam officia tenetur non odit eius incidunt soluta ipsam praesentium ut natus blanditiis laborum distinctio veritatis.</p>
+                        </div>
+                    </div>
+                    <!--fin slide-->
+
+                    <!--inicio slide-->
+                    <div class="slider-show hide">
+                        <div class="slider-img-container">
+                            <div class="slider-img-div">
+                                <img class="slider-img" src="img/Fleet_Van.png" alt="flota_coche">
+                            </div>
+                        </div>
+                        <div class="slider-description">
+                            <h4>Furgonetas y camiones</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, deleniti sunt itaque possimus quibusdam officia tenetur non odit eius incidunt soluta ipsam praesentium ut natus blanditiis laborum distinctio veritatis.</p>
+                        </div>
+                    </div>
+                    <!--fin slide-->
+
+                    
+
+
+
+                </div>
+                  <!-- fin container-->
+
+                  
+
+
+            </div>
+
+
+
+        </section>
+        <!-- FIN FLOTA-->
+
+        <section class="ventajas-section">
+            <div class="ventajas-container">
+                <!-- inicio ventaja-->
+                <div class="ventajas">
+                    <div class="ventajas-titulo">
+                        <div class="ventajas-icono">
+                            <img src="icons/world.svg">
+                        </div>
+                        <p>Alcance global</p>
+                    </div>
+
+                    <div class="ventajas-info">
+                        <p>2000+ oficinas en 70+ países</p>
+                    </div>
+
+                </div>
+                <!--fin ventaja-->
+                <!-- inicio ventaja-->
+                <div class="ventajas">
+                    <div class="ventajas-titulo">
+                        <div class="ventajas-icono">
+                            <img src="icons/car.svg">
+                        </div>
+                        <p>Flota exclusiva</p>
+                    </div>
+
+                    <div class="ventajas-info">
+                        <p>Desde descapotables a SUV premium</p>
+                    </div>
+
+                </div>
+                <!--fin ventaja-->
+                <!-- inicio ventaja-->
+                <div class="ventajas">
+                    <div class="ventajas-titulo">
+                        <div class="ventajas-icono">
+                            <img src="icons/customer.svg">
+                        </div>
+                        <p>Atención personalizada</p>
+                    </div>
+
+                    <div class="ventajas-info">
+                        <p>Sin sorpresas, confiable y transparente.</p>
+                    </div>
+
+                </div>
+                <!--fin ventaja-->
+
+                
+            </div>
+
+        </section>
+        <!-- FIN VENTAJAS-->
+
+        <section class="ofertas-section">
+            <div class="ofertas-titulo">
+                <h3>Ofertas y promociones</h3>
+            </div>
+            <div class="ofertas-container">
+                <div class="oferta">
+                    <div class="oferta-descuento">
+                        <p>Hasta <span>10%</span> dto.</p>
+                    </div>
+                    <p class="oferta-texto">Reserva online y ahorra</p>
+                </div>
+                <div class="oferta">
+                    <div class="oferta-descuento">
+                        <p>Hasta <span>20%</span> dto.</p>
+                    </div>
+                    <p class="oferta-texto">Alquiler de eléctricos</p>
+                </div>
+                <div class="oferta">
+                    <div class="oferta-descuento">
+                        <p>Hasta <span>30%</span> dto.</p>
+                    </div>
+                    <p class="oferta-texto">Visita Tenerife</p>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-logo">
+                <div class="logo__footer">
+                    <h1 class="logo__nombre no-margin">Car<span class="logo__bold">Rental</span></h1>
+                </div>
+                <div class="footer-redes">
+                    <a href=""><img src="icons/instagram.svg"></a>
+                    <a href=""><img src="icons/youtube.svg"></a>
+                    <a href=""><img src="icons/twitter.svg"></a>
+                    <a href=""><img src="icons/facebook.svg"></a>
+                </div>
+        </div>
+       
+
+
+        <div class="footer-apartados">
+
+            <!--inicio footer container-->
+            <div class="footer-container">
+                <div class="footer-titulo">
+                    <h3>Alquileres</h3>
+                    <div class="footer-lista">
+                        <ul>
+                            <li><a href="">Alquiler de coches</a></li>
+                            <li><a href="">Alquiler de Furgonetas</a></li>
+                            <li><a href="">Oficinas</a></li>
+                            <li><a href="">Ofertas</a></li>
+                            <li><a href="">Rental Rewards</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fin footer container-->
+
+               <!--inicio footer container-->
+               <div class="footer-container">
+                <div class="footer-titulo">
+                    <h3>Atención al cliente</h3>
+                    <div class="footer-lista">
+                        <ul>
+                            <li><a href="">Preguntas frecuentes</a></li>
+                            <li><a href="">Solicitar una factura</a></li>
+                            <li><a href="">Protección de datos</a></li>
+                            <li><a href="">CarRental Empresas</a></li>
+                            <li><a href="">Rental Rewards</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fin footer container-->
+
+              <!--inicio footer container-->
+              <div class="footer-container">
+                <div class="footer-titulo">
+                    <h3>Acerca de CarRental</h3>
+                    <div class="footer-lista">
+                        <ul>
+                            <li><a href="">Perfil corporativo</a></li>
+                            <li><a href="">Ofertas de empleo</a></li>
+                            <li><a href="">Inversores</a></li>
+                            <li><a href="">Grupo CarRental</a></li>
+                            <li><a href="">Fundación Neverlost CarRental</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- fin footer container-->
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
