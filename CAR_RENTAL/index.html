@@ -16,24 +16,26 @@
 <body>
     <header class="header">
         <div class="barra">
+            <div class="mobile-menu">
+                <img src="/icons/hamburger-menu.svg">
+            </div>
+            
             <a class="logo" href="index.html">
                 <h1 class="logo__nombre no-margin centrar-texto">Car<span class="logo__bold">Rental</span></h1>
             </a>
 
-            <div class="mobile-menu">
-                <img src="/icons/hamburger-menu.svg">
-            </div>
-
-
-                <nav class="navegacion nav-a">
-                    <a href="index.html" class="navegacion__enlace">Coches y Furgonetas</a>
-                    <a href="index.html" class="navegacion__enlace">Ofertas</a>
-                    <a href="index.html" class="navegacion__enlace">Oficinas y servicios</a>
-                    <a href="index.html" class="navegacion__enlace">Destinos</a>
-                    <a href="index.html" class="navegacion__enlace">Empresas</a>
-                    <a href="index.html" class="navegacion__enlace">Contacto</a>
-                </nav>
             
+
+            <nav class="navegacion nav-a">
+                <a href="index.html" class="navegacion__enlace">Coches y Furgonetas</a>
+                <a href="index.html" class="navegacion__enlace">Ofertas</a>
+                <a href="index.html" class="navegacion__enlace">Oficinas y servicios</a>
+                <a href="index.html" class="navegacion__enlace">Destinos</a>
+                <a href="index.html" class="navegacion__enlace">Empresas</a>
+                <a href="index.html" class="navegacion__enlace">Contacto</a>
+            </nav>
+        
+              
 
             <nav class="iniciar-sesion-container">
                 <div class="iniciar-sesion">
@@ -42,6 +44,15 @@
                 </div>
             </nav>
         </div>
+
+        <nav id="mobile-nav" class="mobile-nav nav-a">
+            <a href="index.html" class="navegacion__enlace-mobile">Coches y Furgonetas</a>
+            <a href="index.html" class="navegacion__enlace-mobile">Ofertas</a>
+            <a href="index.html" class="navegacion__enlace-mobile">Oficinas y servicios</a>
+            <a href="index.html" class="navegacion__enlace-mobile">Destinos</a>
+            <a href="index.html" class="navegacion__enlace-mobile">Empresas</a>
+            <a href="index.html" class="navegacion__enlace-mobile">Contacto</a>
+        </nav>
 
 
         <div class="reserva">
@@ -129,7 +140,7 @@
                         <button onclick="iniciarSlider(1)" class="boton boton-slider boton-block">Vehículos eléctricos</button>
                         <button onclick="iniciarSlider(2)" class="boton boton-slider boton-block">SUVs</button>
                         <button onclick="iniciarSlider(3)" class="boton boton-slider boton-block">Monovolúmenes</button>
-                        <button onclick="iniciarSlider(4)" class="boton boton-slider boton-block">Coches de lujo y deportivos</button>
+                        <button onclick="iniciarSlider(4)" class="boton boton-slider boton-block">Premium</button>
                         <button onclick="iniciarSlider(5)" class="boton boton-slider boton-block">Furgonetas y camiones</button>
                     </div>
                     <!--inicio slide-->
@@ -196,7 +207,7 @@
                             </div>
                         </div>
                         <div class="slider-description">
-                            <h4>Coches de lujo y deportivos</h4>
+                            <h4>Premium</h4>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate, deleniti sunt itaque possimus quibusdam officia tenetur non odit eius incidunt soluta ipsam praesentium ut natus blanditiis laborum distinctio veritatis.</p>
                         </div>
                     </div>

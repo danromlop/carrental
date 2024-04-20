@@ -23,3 +23,16 @@ function iniciarSlider(num){
 
     botones[num].classList.add("boton-activo")
 }
+
+/* mobile menu */
+
+const menuMobile = document.querySelector(".mobile-menu");
+
+menuMobile.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    
+    const mobileNav = document.querySelector(".mobile-nav");
+
+    mobileNav.classList.toggle("mostrar")
+  }

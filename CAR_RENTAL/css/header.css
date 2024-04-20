@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 150rem;
+    max-width: 80%;
     margin: auto;
    
 }
@@ -61,14 +61,84 @@
   
 }
 
+.mobile-menu{
+    display: none;
+}
+
+.mobile-nav{
+    display: block;
+    background-color: var(--secundario);
+    
+       
+}
+
+.navegacion__enlace-mobile{
+    display: block;
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: var(--blanco);
+    
+    
+}
+
+.mobile-nav{
+    display: none;
+    background-color: var(--secundario);
+    
+       
+}
+
+.navegacion__enlace-mobile{
+    display: block;
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: var(--blanco);
+    
+    
+}
 
 
 @media (max-width: 768px){
     .navegacion{
-        visibility: hidden;
+        display: none;
+        
         opacity: 0;
         height: 0;
         transition: visibility .3s ease-in-out, opacity 0.5s linear, height .5s linear;
+    }
+
+    .mobile-menu{
+        display: block;
+        padding: 2rem;
+    }
+
+    .logo{
+        
+        margin: 0;
+        font-size: 2.5rem;
+    }
+
+    .mostrar{
+        display: block;
+    }
+ 
+
+    
+}
+
+@media(max-width: 1024px){
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__enlace {
+        font-size: 1.2rem;
+    }
+
+    .iniciar-sesion {
+        font-size: 1rem;
     }
 }
 
@@ -126,6 +196,24 @@
 }
 
 
+@media (max-width: 768px) {
+    .barra{
+    
+        max-width: 100%;
+        margin: auto;
+       
+    }
+
+    .iniciar-sesion{
+        
+        margin: 0;
+    }
+
+    
+}
+
+
+
 /* RESERVAR */
 
 
@@ -133,9 +221,9 @@
     background-image: url(../img/formulario.jpg);
     background-position: center center;
     background-size: cover;
-    min-height: 50rem;
+   
     
-    
+    position: relative;
     
     
 }
@@ -145,11 +233,12 @@
     grid-template-columns: 1fr 1fr;
     height: 100%;
     column-gap: 2rem;
-    max-width: 150rem;
+    max-width: 80%;
     margin: auto;
     background-color: rgb(50,50,50, 0.5);
     padding: 5rem;
     
+
     
 }
 
@@ -157,6 +246,7 @@
     .reserva-container{
         display: block;
         padding-bottom: 3rem;
+        max-width: 100%;
 
     }
 
@@ -185,8 +275,18 @@
     margin-bottom: 2rem;
 }
 .reserva-descripcion h1{
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 470px) {
+    .reserva-descripcion h1{
+        font-size: 3rem;
+    }
+
+    .reserva-descripcion p{
+        font-size: 1.5rem;
+    }
 }
 
 /* formulario */
